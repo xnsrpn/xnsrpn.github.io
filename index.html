@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>红星阁欢迎你</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        overflow-wrap: break-word;
+      }
+      nav {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        height: 3em;
+        white-space: nowrap;
+        background: #fff;
+      }
+      nav #logo {
+        position: sticky;
+        left: 0;
+      }
+      nav span.menu {
+        color: #000;
+      }
+      nav span.menu a {
+        line-height: 3em;
+        display: inline-block;
+        padding: 0 1em;
+        transition: all 0.2;
+        vertical-align: top;
+        text-decoration: none;
+        color: inherit;
+      }
+      nav span.menu a:hover {
+        text-decoration: none;
+        color: inherit;
+        background: #b0b0b0;
+      }
+      main > div {
+        margin: 24px auto;
+        padding: 8px;
+        border-radius: 32px;
+        background-color: #fafafa;
+        box-shadow: #0f0f0f11 0 0 8px;
+      }
+      h1,
+      table,
+      #a,
+      h2,
+      p {
+        text-align: center;
+      }
+      p {
+        margin: 5px;
+      }
+      main > * {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      .data {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 10em;
+        min-width: 150px;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        background-color: #fffe;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10); */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05),
+          0 8px 16px rgba(0, 0, 0, 0.02), 0 16px 32px rgba(0, 0, 0, 0.01);
+      }
+      .cardValue {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      .cardLabel {
+        font-size: 1rem;
+        color: #666;
+      }
+      .others {
+        display: flex;
+        justify-content: center;
+      }
+      .external p a::after {
+        content: "←";
+      }
+      .external p a::before {
+        content: "→";
+      }
+      .external div p:last-child {
+        margin: 0 0 1em 0;
+      }
+      .message {
+        padding: 0;
+        text-align: center;
+      }
+      .message li::marker {
+        content: none;
+      }
+      footer {
+        padding: 0.2em;
+        background-color: #eee;
+      }
+      @media (min-width: 750px) {
+        .external {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+<body>
+    <h1 id="h" onclick="fun()" style="display: inline;">红星阁欢迎你</h1> 
+    <main id="start">
+    <div>
+    <h2>前言</h2>
+    <p>该网站由2b水牛编写。</p>
+    <h2>红星阁的任务</h2>
+    <p>红星阁是为了解决军武阁与星球阁间的冲突而诞生的。</p>
+    <p>关于军武阁与星球阁此处有<a href="SRPN&LWT1.html">链接</a>可以看。<del>尽管冲突已经停止多年了</del></p>
+    </div>
+    <div>
+    <h2>加入红星阁</h2>
+    <p>红星阁目前与2023年的星球阁一样，采用试卷审核。</p>
+    <p>审核员名单<del>也就是我们的摸鱼大队</del>如下表。</p>
+    <table style="margin: 0 auto;" border="1">
+        <thead>
+          <tr>
+            <th>名称</th>
+            <th>可工作时间</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2b水牛</td>
+            <td>工作日晚，节假日周一、周二、周四、周六全天，周三、周五、周日早12时(utc+8)后</td>
+            <td>网站编写者、副阁主1号</td>
+          </tr>
+          <tr>
+            <td>依托猫猫</td>
+            <td>节假日</td>
+            <td>阁主</td>
+          </tr>
+          <tr>
+            <td>TON618</td>
+            <td><del>我不到啊</del>？？？</td>
+            <td>副阁主2号</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div>
+      <h2>对我们有影响的<del>恶人</del></h2>
+      <p>0、0-级敌对 曾列入该表格为该等级。</p>
+      <p>1级敌对 少量搬运、辱骂（含srpn）但不影响生活则列入此等级。</p>
+      <p>2级敌对 搬运、辱骂、造谣（含SRPN）列入此等级。</p>
+      <p>3级敌对 大量搬运、辱骂、造谣（含SRPN）列入此等级。</p>
+      <p>4级敌对 大量搬运、辱骂、造谣（含SRPN）且经劝无效列入此等级。</p>
+      <p>5级，5级+敌对 极大量搬运、辱骂、造谣或违法犯罪列入此等级。</p>
+      <table style="margin: 0 auto;" border="1">
+        <thead>
+            <tr>
+              <th>名称</th>
+              <th>行径</th>
+              <th>等级</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>天瓜君</td>
+              <td>曾多次侮辱、攻击星球阁，侮辱我阁成员。并且曾多次轰炸我阁主群且从未正面回复，对我阁造成极大影响</td>
+              <td>5-</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>军武阁</td>
+              <td>曾多次侮辱、攻击星球阁，且暴露过他人隐私信息。</td>
+              <td>5</td>
+              <td></td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+      <div>
+      <h2>我们的历史</h2>
+      <table style="margin: 0 auto;" border="1">
+        <tbody><tr>
+          <th colspan="2">时间</th>
+          <th rowspan="2" class="a">事件</th>
+        </tr>
+        <tr>
+          <th>年</th>
+          <th>月</th>
+        </tr>
+          <td rowspan="6">2024</td>
+            <td rowspan="3">2</td>
+            <td>红星阁成立</td>
+          </tr>
+          <tr>
+            <td>天瓜君炸群事件（即暴风事件）</td>
+          </tr>
+          <tr>
+            <td>因暴风事件，天瓜君被禁言4次。</td>
+          </tr>
+      </table>
+      <p>这里还有一段文本。</p>
+      <details>
+        <p>2024年2月2日，红星阁成立。</p>
+        <p>天瓜君在2024年2月2日、3日各发起了一波攻势。</p>
+        <p>因此，天瓜君被禁言4次。</p>
+        <p>看什么看，没了。</p>
+      </details>
+      <h2>我们的数据</h2>
+      <p>红星阁主群有31人，其中3个人是副阁主及以上的职位（包括审核员）。</p>
+      <p>红星阁<del>哪里好了</del>……</p>
+      <h2>杂项</h2>
+      <a href="https://www.runoob.com/html/html-editors.html">想建立自己的网站吗？点我传送</a>
+      </div>
+      <h2>友情链接</h2>
+      <footer>
+        <div>
+   
+          <a href="https://zubeneschamali.rth1.one/">青菜网站</a>
+          <a href="https://maugfy.rth1.one/">Maugfy网站</a>
+          <a href="https://tau-sgr.mysxl.cn/">斗宿五网站</a>
+          <a href="https://yksy.mysxl.cn/">水益网站</a>
+          <a href="https://moochion.rth1.one/">暮秋网站</a>
+          <a href="https://nsakrty.rth1.one/">nsakrty网站</a>
+          <a href="http://www.srpn.top">星球阁网站</a>
+          <a href="http://e2.rth1.one">Earth-2网站</a></div>
+  </footer>
+  </body>
+  </html>
+
+</main>   
+</body>
+</html>
