@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body{opacity:1;text-align:center;background:linear-gradient(#ffc76d,#ff9b18)}
+            table{margin:auto;text-align:center}
+           
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>主页</title>
+    </head>
+<body>
+    <h1>关于星球阁、军武阁</h1>
+    <p>该事件本质是星球阁和军武阁对快手不良风气的看法出现了异议，双方在此爆发冲突。</p>
+    <p>星球阁认为快手上的黄小鬼、大眼苍蝇极大的污染了星球圈的环境。军武阁认为小鬼不会大的影响星球圈。</p>
+    <p>星球阁的手段是通过举报来吸引平台介入。</p>
+    <p>而军武阁是通过公布他人个人信息来威胁星球阁成员，目前来看这种方法比较有效，但并不正规。</p>
+    <p>而红星阁支持星球阁的做法，因为军武阁的做法违法。</p>
+    <p>剩下的部分烂尾了。</p>
+    <a href="Untitled-2.html">返回</a>
+</body>
+</html>
