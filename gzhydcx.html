@@ -5,6 +5,9 @@
       body {
         margin: 0;
         padding: 0;
+        font-family: "PingFang SC", sans-serif;
+        line-height: 1.6;
+        color: #333;
       }
       a {
         overflow-wrap: break-word;
@@ -45,12 +48,31 @@
         background-color: #fafafa;
         box-shadow: #0f0f0f11 0 0 8px;
       }
-      h1,
-      table,
-      #a,
-      h2,
+      h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #f5f5f5, #b0b0b0, #f5f5f5);
+      }
+      h2 {
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+        color: #444;
+      }
       p {
         text-align: center;
+        margin: 0.8rem 0;
+        line-height: 1.7;
       }
       p {
         margin: 5px;
@@ -73,12 +95,15 @@
         width: 10em;
         min-width: 150px;
         margin: 1rem;
-        padding: 1rem;
-        border-radius: 0.25rem;
-        background-color: #fffe;
-        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10); */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05),
-          0 8px 16px rgba(0, 0, 0, 0.02), 0 16px 32px rgba(0, 0, 0, 0.01);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
       }
       .cardValue {
         font-size: 2rem;
@@ -108,6 +133,21 @@
       }
       .message li::marker {
         content: none;
+      }
+      .table-style {
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 0.6rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+      }
+      .table-style tr {
+        transition: background-color 0.2s;
+      }
+      .table-style th,
+      .table-style td {
+        padding: 12px 15px;
       }
       footer {
         padding: 0.2em;
@@ -150,7 +190,7 @@
       <p>3级敌对 大量搬运、辱骂、造谣（含SRPN）列入此等级。</p>
       <p>4级敌对 大量搬运、辱骂、造谣（含SRPN）且经劝无效列入此等级。</p>
       <p>5级，5级+敌对 极大量搬运、辱骂、造谣或违法犯罪列入此等级。</p>
-      <table style="margin: 0 auto;" border="1">
+      <table class="table-style" style="margin: 0 auto;" border="1">
         <thead>
             <tr>
               <th>名称</th>
@@ -177,7 +217,7 @@
       </div>
       <div>
         <h2>我的一堆朋友（的其中一部分）</h2>
-      <table style="margin: 0 auto;" border="1">
+      <table class="table-style" style="margin: 0 auto;" border="1">
         <thead>
             <tr>
               <th>名称</th>
@@ -226,7 +266,7 @@
           <hr>
           <p>红星阁以帮助星球阁巩固地位为宗旨<del>不过貌似星球阁已经稳定住了地位</del></p>
           <p>现在作为类似星球阁的小型组织团体留存下来，当你想要加入的时候，不妨看看<del>摸鱼队员</del>审核员表：</p>
-          <table style="margin: 0 auto;" border="1">
+      <table class="table-style" style="margin: 0 auto;" border="1">
         <thead>
           <tr>
             <th>名称</th>
