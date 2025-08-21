@@ -15,7 +15,7 @@
         width: 100%;
         height: 3em;
         white-space: nowrap;
-        background: #fff;
+        background: #f5f5f5;
       }
       nav #logo {
         position: sticky;
@@ -28,7 +28,7 @@
         line-height: 3em;
         display: inline-block;
         padding: 0 1em;
-        transition: all 0.2;
+        transition: all 0.2s;
         vertical-align: top;
         text-decoration: none;
         color: inherit;
@@ -121,13 +121,23 @@
       }
     </style>
   </head>
-        <h1 id="welcome-title">这是你该账号有点抽象的网页</h1>
+  <body>
+    <nav>
+      <span id="logo">该账号有点抽象</span>
+      <span class="menu">
+        <a href="#start">首页</a>
+        <a href="#about">关于我</a>
+        <a href="#works">我的作品</a>
+        <a href="#links">友情链接</a>
+      </span>
+    </nav>
+    <h1 id="welcome-title">这是你该账号有点抽象的网页</h1>
         <hr>
         <!-- <div style="display: flex; justify-content: center"><a href="#start" class="btn">开始探索吧</a></div> -->
       </div>
     </div>
     <main id="start">
-      <div>
+      <div id="about">
         <h2>我谁？</h2>
           <p>我名叫<b>该账号有点抽象</b>，是一名人类。我混一堆圈，包括Backrooms，星球动画(天文圈)，Undetale等在内的<del>不下一百万个</del>多个圈子。</p>
           <p>我已经加入了多个群体，我是SRPN与SRPG成员，也是RSPN的其中一名副阁主并且为其编写了一个网站。</p>
@@ -204,7 +214,7 @@
           </tbody>
       </table>
       </div>
-      <div>
+      <div id="works">
         <h2>我的作品</h2>
         <p>我编写了一篇已经上传的原创后室楼层：<a href="https://backrooms.fandom.com/zh/wiki/Level_ZH_642">Level ZH 642</a></p>
         <p>此外，还有一篇青菜的楼层将在2025/8/1上传：<a href="https://backrooms.fandom.com/zh/wiki/User:Abstract114514/Level_ZH_1911">Level ZH 1911</a></p>
@@ -278,9 +288,11 @@
         </div>
     </main>
     <hr>
-    <footer>
+    <footer id="links">
       <h2>特别鸣谢</h2>
       <p><a href="http://gzxlcishl.rth1.xyz">@CISHL一HeCat</a> Nsakrty Earth-2 <a href="https://xnsrpn.github.io">红星阁</a>全体成员 <a href="https://srpn.top/">星球阁</a>全体成员</p>
+      <h2>友情链接</h2>
+      <a href="http://gzxlcishl.rth1.xyz">CISHL一HeCat网</a><a href="https://srpn.top">星球阁网</a>
     </footer>
     <script src="script/update.js"></script>
   
