@@ -1,45 +1,58 @@
 <html lang="zh">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎来到该账号有点抽象的网站</title>
     <style>
       body {
         margin: 0;
         padding: 0;
-        font-family: "PingFang SC", sans-serif;
         line-height: 1.6;
-        color: #333;
       }
       a {
         overflow-wrap: break-word;
       }
       nav {
-        overflow-x: auto;
-        overflow-y: hidden;
         width: 100%;
-        height: 3em;
-        white-space: nowrap;
         background: #f5f5f5;
+        padding: 0.5em 0;
       }
       nav #logo {
-        position: sticky;
-        left: 0;
+        display: block;
+        padding: 0.5em 1em;
+        font-weight: bold;
       }
       nav span.menu {
-        color: #000;
+        display: flex;
+        flex-direction: column;
       }
       nav span.menu a {
-        line-height: 3em;
-        display: inline-block;
-        padding: 0 1em;
-        transition: all 0.2s;
-        vertical-align: top;
+        display: block;
+        padding: 0.8em 1em;
         text-decoration: none;
         color: inherit;
+        transition: all 0.2s;
       }
       nav span.menu a:hover {
-        text-decoration: none;
-        color: inherit;
         background: #b0b0b0;
+      }
+
+      /* 桌面端导航 */
+      @media (min-width: 768px) {
+        nav {
+          display: flex;
+          align-items: center;
+          height: 3em;
+        }
+        nav span.menu {
+          flex-direction: row;
+          white-space: nowrap;
+          overflow-x: auto;
+        }
+        nav span.menu a {
+          line-height: 3em;
+          display: inline-block;
+          vertical-align: top;
+        }
       }
       main > div {
         margin: 24px auto;
@@ -50,29 +63,13 @@
       }
       h1 {
         text-align: center;
-        margin-bottom: 1.5rem;
-        position: relative;
-        padding-bottom: 0.5rem;
-      }
-      h1::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80px;
-        height: 3px;
-        background: linear-gradient(90deg, #f5f5f5, #b0b0b0, #f5f5f5);
       }
       h2 {
         text-align: center;
-        margin: 1.5rem 0 1rem;
-        color: #444;
       }
       p {
         text-align: center;
-        margin: 0.8rem 0;
-        line-height: 1.7;
+        margin: 5px;
       }
       p {
         margin: 5px;
@@ -134,6 +131,12 @@
       .message li::marker {
         content: none;
       }
+      /* 表格容器 */
+      .table-container {
+        overflow-x: auto;
+        margin: 1em 0;
+        -webkit-overflow-scrolling: touch;
+      }
       .table-style {
         border-collapse: separate;
         border-spacing: 0;
@@ -141,6 +144,7 @@
         overflow: hidden;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         transition: all 0.3s ease;
+        min-width: 600px;
       }
       .table-style tr {
         transition: background-color 0.2s;
@@ -168,6 +172,7 @@
         <a href="#start">首页</a>
         <a href="#about">关于我</a>
         <a href="#works">我的作品</a>
+        <a href="#news">新闻与动态</a>
         <a href="#links">友情链接</a>
       </span>
     </nav>
@@ -202,7 +207,7 @@
           <tbody>
             <tr>
               <td>天瓜君</td>
-              <td>曾多次侮辱、攻击星球阁，侮辱红星阁成员。并且曾多次轰炸红星阁主群且从未正面回复，对红星阁造成极大影响</td>
+              <td>曾多次侮辱、攻击星球阁，侮辱红星阁成员。并且曾多次轰炸红星阁主群且从未正面回复，对红星阁造成极大影响，并建立以反对红星阁为宗旨的组织并带领成员轰炸多个星球圈相关组织。</td>
               <td>5-</td>
               <td>从2020到2025均有此行径并且将攻击对象改为针对我。</td>
             </tr>
@@ -325,6 +330,18 @@
           <p>我特喜欢用的一些工具，希望能帮到你（^_^）</p>
           <a href="https://github.com/">GitHub主页</a>
           <a href="https://www.runoob.com/html/html-tutorial.html">学HTML</a>
+        </div>
+        <div id="news">
+          <h2>新闻与动态</h2>
+          <p>Level 1911 成为了真的后室楼层（zh1911）</p>。</p>
+          <iframe src="https://backrooms.fandom.com/zh/wiki/Level_ZH_1911" frameborder="0" style="
+              width: 100%;
+              height: 80vh;
+              margin: 0 auto;
+              display: block;
+              overflow: visible;"></iframe>
+          <marquee behavior="scroll" direction="left">在关注天瓜君</marquee>
+           <p>国智星历提到的复制粘贴代码的就是我，但你不是说好了可以合作吗（反正不怪你但我真篡改不了而且只是学习用处</p>
         </div>
     </main>
     <hr>
